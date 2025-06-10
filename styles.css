@@ -48,6 +48,13 @@ body {
     color: #b24c63;
 }
 
+.nav-links a .active {
+    color: #b24c63;
+    font-weight: bold;
+    border-bottom-width: 2px;
+    border-bottom-color: #b24c63;
+}
+
 .home-container {
     flex: 1;
     padding: 4rem 2rem;
@@ -101,4 +108,158 @@ footer {
 
 .icons a:hover {
     color: #943750;
+}
+
+/*Lessons page styling*/
+.lessons-page {
+    padding: 2rem;
+    background-color: #fffdfd;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.lessons-page h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #b24c63;
+}
+
+/*Lesson sections*/
+.lesson-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+    background-color: #fff1f5;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.lesson-section img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.lesson-content {
+    flex: 1;
+}
+
+.lesson-content h3 {
+    margin-top: 0;
+    color: #b24c63;
+}
+
+.lesson-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.8 0;
+    margin-bottom: 1rem;
+}
+
+.lesson-btn {
+    display: inline-block;
+    background-color: #b24c63;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.lesson-btn:hover {
+    background-color: #943750;
+}
+
+.lesson-content label {
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+/*Responsiveness*/
+@media (max-width: 768px) {
+    .lesson-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lesson-section img {
+        margin: 0 0 0 1rem 0;
+    }
+
+    .lesson-content {
+        padding: 0;
+    }
+}
+
+/*Patters page styling*/
+.patterns-page {
+    padding: 2rem;
+    background-color: #fffdfd;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.patterns-page h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #b24c63;
+}
+
+.patterns-page .intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.patterns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.pattern-card {
+    background-color: #fff1f5;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    text-align: center;
+}
+
+.pattern-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.pattern-card h3 {
+    color: #b24c63;
+    margin-bottom: 0.5rem;
+}
+
+.pattern-card p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.pattern-btn {
+    display: inline-block;
+    background-color: #b24c63;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
