@@ -301,6 +301,15 @@ body {
     font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+    .footer h3, .footer p, .footer ul {
+        text-align: center;
+    }
+    .footer ul li {
+        justify-content: center;
+    }
+}
+
 /*Lessons page styling*/
 .lessons-page {
     padding: 2rem;
