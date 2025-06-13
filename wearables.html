@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wearables - Hook & Learn</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/bbbc8c4103.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -22,6 +23,78 @@
             </ul>
         </nav>
     </header>
+
+    <main class="wearables-page">
+        <h2>Wearables</h2>
+
+        <!--Search bar-->
+        <section class="search-section">
+            <input type="text" id="search-input" placeholder="Search wearables...">
+        </section>
+        <!--Filter buttons-->
+        <section class="filter-buttons">
+            <button class="filter-btn" data-category="All">All</button>
+            <button class="filter-btn" data-category="Top">Tops</button>
+            <button class="filter-btn" data-category="Hat">Hats</button>
+            <button class="filter-btn" data-category="Accessory">Accessories</button>
+        </section>
+
+        <!--Wearable items-->
+        <section>
+            <div class="wearables-grid">
+                <div class="wearables-card" data-category="Top">
+                    <img src="photos/croptop.jpeg" alt="Crop top">
+                    <h3>Crop Top</h3>
+                </div>
+                <div class="wearables-card" data-category="Hat">
+                    <img src="photos/buckethat.jpeg" alt="Bucket hat">
+                    <h3>Bucket Hat</h3>
+                </div>
+                <div class="wearables-card" data-category="Top">
+                    <img src="photos/bralette.jpeg" alt="Bralette">
+                    <h3>Bralette</h3>
+                </div>
+                <div class="wearables-card" data-category="Accessory">
+                    <img src="photos/crochethandbags.jpeg" alt="Handbag">
+                    <img src="photos/Pinterest.jpeg" alt="Handbag">
+                    <h3>Handbag</h3>
+                </div>
+                <div class="wearables-card" data-category="Hat">
+                    <img src="photos/Crochet Ruffle Hat.jpeg" alt="Ruffled hat">
+                    <h3>Ruffled Hat</h3>
+                </div>
+                <div class="wearables-card" data-category="Accessory">
+                    <img src="photos/bagcharms.jpeg" alt="Bag charms">
+                    <h3>Bag Charms</h3>
+                </div> 
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+    <!--Subscription cta-->
+    <div class="footer-subscription">
+        <h3>Stay in the loop.</h3>
+        <p>Subscribe to get the latest crochet patterns, lessons and updates!</p>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Your Email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <div class="icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a> 
+    </div>
+    <p>
+        &copy Hook & Learn 2025. All rights reserved.
+    </p>
+   
+
+   </footer>
     
 </body>
 </html>

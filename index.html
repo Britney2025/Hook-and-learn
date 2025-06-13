@@ -25,18 +25,28 @@
    </nav>
 
    <main class="home-container">
-    <h1>Welcome to Hook & Learn</h1>
-    <p>
-        Discover the joy of crochet in a simple, friendly way. Whether you're just picking a hook for 
-        the first time, or you're brushing up on the basics, Hook & Learn guides you stitch by stitch.
-        Your cozy corner to learn crochet.
-    </p>
-    <p>
-        You'll find beginner lessons and fun practice patterns to up your crochet skills. Ready to get
-        stitching? Let's begin!
-    </p>
-    <a href="lessons.html" class="cta-button">Start Learning</a>
 
+    <!--Introduction-->
+    <section class="intro-section">
+        <div class="intro-image">
+            <img src="photos/Crochet☘.jpeg" alt="Intro-image">
+        </div>
+        <div class="intro-text">
+        <h1>Welcome to Hook & Learn</h1>
+        <p>
+            Discover the joy of crochet in a simple, friendly way. Whether you're just picking a hook for 
+            the first time, or you're brushing up on the basics, Hook & Learn guides you stitch by stitch.
+            Your cozy corner to learn crochet.
+        </p>
+        <p>
+            You'll find beginner lessons and fun practice patterns to up your crochet skills. Ready to get
+            stitching? Let's begin!
+        </p>
+        <a href="lessons.html" class="cta-button">Start Learning</a>
+        </div>
+    </section>
+
+    <!--Category-->
     <div class="category-section">
         <h2>Explore Categories.</h2>
         <div class="categories">
@@ -47,11 +57,12 @@
             </a>
            
 
-            <div class="category-card">
+            <a href="wearables.html" class="category-card">
                 <img src="photos/wearables.jpeg" alt="Wearables">
                 <h3>Wearables</h3>
                 <p>Make stylish tops, hats, cardigans and accessories you can rock!</p>
-            </div>
+            </a>
+                
 
             <div class="category-card">
                 <img src="photos/home-decor3.jpeg" alt="Home-decor">
@@ -62,16 +73,35 @@
     </div>
    </main>
 
-   <footer>
-    <!--Subscription cta-->
-    <div class="footer-subscription">
-        <h3>Stay in the loop.</h3>
-        <p>Subscribe to get the latest crochet patterns, lessons and updates!</p>
-        <form class="subscribe-form">
-            <input type="email" placeholder="Your Email address" required>
-            <button type="submit">Subscribe</button>
-        </form>
+   <footer class="footer">
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>About</h3>
+            <p>We celebrate creativity and timeless craftsmanship. We turn yarn into stories through the art 
+                of crochet. From simple stitches to intricate patterns, every piece is made with intention.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="patterns.html">Patterns</a></li>
+                <li><a href="wearables.html">Wearables</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Stay in the loop.</h3>
+            <p>Subscribe to get the latest crochet patterns, lessons and updates!</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Your Email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
     </div>
+
     <div class="icons">
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -79,11 +109,10 @@
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-x-twitter"></i></a> 
     </div>
-    <p>
-        &copy Hook & Learn 2025. All rights reserved.
-    </p>
-   
 
+    <div class="footer-bottom">
+        <p>&copy Hook & Learn 2025. All rights reserved.</p>  
+    </div>
    </footer>
 </body>
 </html>

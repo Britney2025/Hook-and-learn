@@ -55,21 +55,50 @@ body {
     border-bottom-color: #b24c63;
 }
 
-.home-container {
-    flex: 1;
-    padding: 4rem 2rem;
-    text-align: center;
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 2rem;
+    background-color: #fff;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
-.home-container h1 {
-    font-size: 2.5rem;
+.intro-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.intro-text h1 {
+    font-size: 2rem;
     color: #b24c63;
     margin-bottom: 1rem;
 }
 
-.home-container p {
+.intro-text p {
+    margin: 1rem 0;
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro-image, .intro-text {
+        max-width: 100%;
+    }
 }
 
 .cta-button {
@@ -90,6 +119,7 @@ body {
     padding: 3rem 1rem;
     background-color: #fff6f8;
     text-align: center;
+    margin: auto;
 }
 
 .category-section h2 {
@@ -135,27 +165,30 @@ body {
     color: #444;
 }
 
-footer {
+.footer {
     background-color: #f7d8d8;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 40px 20px;
+    font-family: sans-serif;
     color: #555;
 }
 
-.footer-subscription {
-    margin-bottom: 2rem;
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-subscription h3 {
+.footer-column {
+    flex: 1 1 200px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
     color: #b24c63;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.footer-subscription p {
-    color: #555;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
 .subscribe-form {
@@ -414,5 +447,85 @@ footer {
 
 .contact-form button:hover {
     background-color: #943750;
+}
+
+/*Wearables page styling*/
+.wearables-page{
+    padding: 2rem;
+}
+
+.wearables-page h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b24c63;
+    margin-bottom: 2rem;
+}
+
+.search-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#search-input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background-color: #b24c63;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    margin: 0 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+}
+
+.filter-btn:hover {
+    background-color: #943750;
+}
+
+.wearables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.wearables-card {
+    background-color: #fff1f5;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    text-align: center;
+}
+
+.wearables-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wearables-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.wearables-card h3 {
+    margin: 0;
+    color: #b24c63;
+    font-size: 1rem;
 }
 
