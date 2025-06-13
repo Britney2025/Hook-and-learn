@@ -166,10 +166,11 @@ body {
 }
 
 .footer {
-    background-color: #f7d8d8;
-    padding: 40px 20px;
+    background-color: #f9e6e6;
+    padding: 40px 20px 10px;
     font-family: sans-serif;
-    color: #555;
+    color: #333;
+    border-top: 2px solid #dcbaba;
 }
 
 .footer-columns {
@@ -191,19 +192,74 @@ body {
     font-size: 1.2rem;
 }
 
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a i {
+    margin-bottom: 8px;
+    margin-right: 8px;
+    color: #b65d5d;
+} 
+
+.footer-column a {
+    color: #444;
+    text-decoration: none;
+}
+
+.footer-column a:hover{
+    text-decoration: underline;
+}
+
+.footer-about {
+    background-color: #fff7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer-about h3 {
+    color: #b65d5d;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #dcbaba;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-about p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #444;
+    max-width: 300px;margin: 0 auto;
+}
+
+.footer-links {
+    background-color: #fff7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer-form {
+    background-color: #fff7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 .subscribe-form {
     display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .subscribe-form input {
-    padding: 0.5rem;
+    padding: 8px 12px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-    width: 250px;
-    max-width: 100%;
+    border-radius: 5px;
+    flex: 1;
     font-size: 1rem;
 }
 
@@ -211,11 +267,11 @@ body {
     background-color: #b24c63;
     color: #fff;
     border: none;
-    padding: 0.6rem 1.2rem;
+    padding: 8px 12px;
     border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-left: 5px;
 }
 
 .subscribe-form button:hover {
@@ -223,19 +279,26 @@ body {
 }
 
 .icons {
-    margin: 1rem 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .icons a {
+    display: inline-block;
+    margin: 0 10px;
     color: #b24c63;
-    text-decoration: none;
-    font-weight: 500;
-    margin: 0 0.3rem;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
 .icons a:hover {
     color: #943750;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
 }
 
 /*Lessons page styling*/
